@@ -1,4 +1,13 @@
-
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
 body {
     margin: 0;
     margin-top: 50px;
@@ -18,22 +27,8 @@ header {
     background-color: #eee;
 }
 header {
-    animation-duration: 3s;
-    animation-name: slide;
-  }
-  
-  @keyframes slide {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
+   animation: fadeIn 1s ease-in both;
+}
 header * {
     display: inline;
     height: 50px;
@@ -53,7 +48,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+    animation: fadeIn 1s ease-in both;
     background-size: cover; /* Add this line */
     background-position: center center; /* Add this line */
     background-repeat: no-repeat; /* Add this line */
@@ -61,21 +56,8 @@ section {
 
 }
 #hero {
-    animation-duration: 3s;
-    animation-name: slide;
-  }
-  
-  @keyframes slide {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+    animation: fadeIn 1s ease-in both;
+}
 #hero .profile-img {
     width: 300px;
     border-radius: 50%;
