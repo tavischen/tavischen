@@ -8,13 +8,6 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
-body {
-    margin: 0;
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
-    font-family: 'Spartan', sans-serif;
-}
 
 header {
     display: flex;
@@ -24,11 +17,20 @@ header {
     right: 0;
     height: 50px;
     line-height: 50px;
-    background-color: #eee;
+    background: #eee;
+    background:#fff;
+    z-index: 1000;
+    min-height: 50px;
+    max-height: 50x;
+    width: 100%;
+    border-bottom: 2px solid #e2eaf3;
+    font-family: 'Lato', sans-serif
+    
 }
 header {
-   animation: fadeIn 1s ease-in both;
-}
+  animation: fadeIn 1s ease-in both;
+  }
+
 header * {
     display: inline;
     height: 50px;
@@ -41,9 +43,15 @@ header ul {
 header li {
     margin-left: 20px;
 }
-
+body {
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: 'Lato', sans-serif
+}
 section {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,15 +59,17 @@ section {
     animation: fadeIn 1s ease-in both;
     background-size: cover; /* Add this line */
     background-position: center center; /* Add this line */
-    background-repeat: no-repeat; /* Add this line */
-    background-attachment: fixed; /* Add this line */
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    font-family: 'Lato', sans-serif
+}
 
-}
 #hero {
-    animation: fadeIn 1s ease-in both;
-}
+  animation: fadeIn 1s ease-in both;
+  }
+
 #hero .profile-img {
-    width: 300px;
+    width: 275px;
     border-radius: 50%;
 }
 
@@ -69,36 +79,103 @@ footer {
 }
 
 #hero h1 {
-    font-size: 4.5em;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 4px #423f3f
 }
 
 section h2 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 section h3 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 p {
-    font-size: 1em
+    font-size: 1.25em
 }
 
 header a {
     text-decoration: none;
     color: black;
 }
-
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
 .socicon {
     width: 2rem;
     height: 2rem;
 }
 /* Add everything below here */
 
-html { 
-    background: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images.unsplash.com/photo-1522923279781-30b559d630a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80') no-repeat center center fixed; 
+
+  html { 
+    background: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images.unsplash.com/photo-1501971687420-ee6a2eca6e03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     scroll-behavior: smooth;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Spartan:wght@700&display=swap');
+.projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+.project-pic {
+    width: 40%;
+    height: 40%;
+  }
+  
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.project-container {
+    text-align: center;
+    width: 20rem;
+    padding: 1rem;
+  }
+.project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+.project-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+.project-card {
+    background-color: #fff;
+    border-radius: 5px;
+    transition: box-shadow .3s;
+    padding: 20px;
+    margin: 10px;
+  }
+  .project-card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+.icon {
+  width: .5in;
+  height: .5in;
+}
