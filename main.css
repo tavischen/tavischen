@@ -24,12 +24,11 @@ header {
     max-height: 50x;
     width: 100%;
     border-bottom: 2px solid #e2eaf3;
-    font-family: 'Lato', sans-serif
-    
+    font-family: 'Lato', sans-serif   
 }
 header {
   animation: fadeIn 1s ease-in both;
-  }
+}
 
 header * {
     display: inline;
@@ -115,54 +114,50 @@ header a {
     height: 2rem;
 }
 /* Add everything below here */
-
-
-  html { 
+html { 
     background: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images.unsplash.com/photo-1501971687420-ee6a2eca6e03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     scroll-behavior: smooth;
-  }
-
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Spartan:wght@700&display=swap');
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Spartan:wght@700&display=swap');
 .projects-title {
     text-align: center;
     margin-bottom: 1rem;
-  }
+ }
 .projects {
     background-color: var(--bg-color);
     padding: 32px 0;
     margin-top: 2rem;
-  }
-  
+}
 .project-pic {
     width: 40%;
     height: 40%;
-  }
+}
   
 .projects-container {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 .project-container {
     text-align: center;
     width: 20rem;
     padding: 1rem;
-  }
+}
 .project-container p {
     padding: 0.4rem;
-  }
+}
   
   .project-title {
     margin-bottom: var(--bottom-margin);
-  }
+}
   
 .project-details {
     margin-bottom: var(--bottom-margin);
-  }
+}
   
 .project-card {
     background-color: #fff;
@@ -170,10 +165,10 @@ header a {
     transition: box-shadow .3s;
     padding: 20px;
     margin: 10px;
-  }
+}
   .project-card:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
-  }
+}
 
 .icon {
   width: .5in;
